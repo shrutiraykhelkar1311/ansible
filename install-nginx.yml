@@ -1,0 +1,18 @@
+---
+-  hosts: host1
+   become: true
+   name: play1
+   tasks:
+    - name: Execute command 'Date'
+      command: date
+    - name: execute script on server
+      script: test_script.sh
+
+- hosts: host2
+ become: true
+ name: play2
+ tasks:
+  - name: execute script on server
+    script: test_script.sh
+  - name: ensure nginx is at the latest version 
+   apt: name=nginx update_cache=yes state=latest
