@@ -1,0 +1,28 @@
+ansible lab commands 
+
+sudo apt-get update
+
+Master -----sudo apt install software-properties-common
+Master------sudo apt-add-repository ppa:ansible/ansible
+master------sudo apt update
+Master------- sudo apt install ansible
+
+node------ sudo apt-get install python3
+
+Master---- ssh-keygen
+
+node----sudo nano authorized_keys (paste key here)
+
+Master------ ssh@ubuntu (PublicIP of Slave)
+Master-------- cd.ssh
+Master ----------sudo nano /etc/ansible/hosts
+
+Matter to be typed inside
+
+[Production]
+
+node ansible_ssh_host=(PublicIP of master)
+
+Master ansible -m ping all
+
+ansible -m ping production/node
