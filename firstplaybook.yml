@@ -1,0 +1,18 @@
+#install apache2
+
+---
+-hosts: node1
+ name:  play1
+ tasks;
+ - name: Installapache2
+   apt:  name=apache2 state=latest
+   become: true
+  
+#install nginx
+-hosts: node2
+ name:  play2
+ tasks;
+ - name: Installnginx
+   apt:  name=nginx state=latest
+   become: true
+

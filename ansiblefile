@@ -26,3 +26,5 @@ node ansible_ssh_host=(PublicIP of master)
 Master ansible -m ping all
 
 ansible -m ping production/node
+
+
