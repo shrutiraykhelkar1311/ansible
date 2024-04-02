@@ -36,21 +36,7 @@ Advantages :-
 
 
 
-                       Ansible playbook:-
-
-                       YAML
-
-
-
-
-
-
-
-
-
-
- 
-	          Ansible master 
+                      
 
                                            	 
 
